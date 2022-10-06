@@ -32,7 +32,7 @@ const App = () => {
     <div>
       <form onSubmit={handleSubmit}>
       <input type={'text'} placeholder='Your Name...' onChange={(e)=>setName(e.target.value)}/>
-      <input type={'submit'} />
+      <input type={'submit'} value='Add'/>
       </form>
       <br></br>
       <table>
