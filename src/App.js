@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import './App.css'
 
 const App = () => {
   const [name,setName] = useState('')
@@ -29,13 +30,13 @@ const App = () => {
   })
 
   return (
-    <div>
+    <div className='container'>
       <form onSubmit={handleSubmit}>
       <input type={'text'} placeholder='Your Name...' onChange={(e)=>setName(e.target.value)}/>
       <input type={'submit'} value='Add'/>
       </form>
       <br></br>
-      <table>
+      <table className='table'>
         <thead>
           <tr>
           <th>Name</th>
